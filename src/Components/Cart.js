@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "../Cart.css";
 import CartItem from "./CartItem";
 
+// Cart component
 function Cart({ initialItems }) {
   // load initial (or changed) items from localStorage (in case of browser page reloads manually)
   const initialState = JSON.parse(window.localStorage.getItem('items'));

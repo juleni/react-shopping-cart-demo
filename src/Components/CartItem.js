@@ -1,5 +1,5 @@
 import "../CartItem.css";
-
+// Cart Item component
 function CartItem({ id, name, price, qty, updateQty}) {
 
   const addOne = () => updateQty(id, qty + 1);
