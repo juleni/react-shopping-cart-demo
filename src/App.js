@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Cart from "./Components/Cart";
+
+const items = [
+  {id: 1, name: 'Cynotilapia zebroides Cobwe', price: 2.9, qty: 3},
+  {id: 2, name: 'Labidochromis hongi "Sweden"', price: 3.9, qty: 5},
+  {id: 3, name: 'Metriaclima fainzilberi Maison Reef', price: 2.8, qty: 2},
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Cart initialItems={ items }/>
     </div>
   );
 }
